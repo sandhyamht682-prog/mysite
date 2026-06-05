@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat | My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <aside class="sidebar">
+        <div class="sidebar-brand">Portfolio</div>
+        <nav class="nav-links">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="about.html" class="nav-link">About Me</a>
+            <a href="projects.html" class="nav-link">My Projects</a>
+            <a href="chat.html" class="nav-link active">Chat With Me</a>
+            <a href="contact.html" class="nav-link">Contact Me</a>
+        </nav>
+        <div class="sidebar-footer">© 2026 Portfolio</div>
+    </aside>
+
+    <main class="content-window">
+        <h2>Chat With Me</h2>
+        <div class="chat-container">
+            
+            <div id="chat-auth" class="chat-auth">
+                <p>Enter your details to initiate a live messaging chat session:</p>
+                <input type="text" id="chat-name" placeholder="Your Name" required>
+                <input type="tel" id="chat-phone" placeholder="Your Mobile Number" required>
+                <button onclick="startChat()" class="btn">Join Chat Room</button>
+            </div>
+            
+            <div id="chat-window" class="chat-window hidden">
+                <div id="chat-messages" class="chat-messages">
+                    <div class="message system">System: Handshake validated. Secure connection active.</div>
+                </div>
+                <div class="chat-input-area">
+                    <input type="text" id="message-input" placeholder="Type your message...">
+                    <button onclick="sendMessage()" class="btn">Send</button>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
